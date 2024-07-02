@@ -1,0 +1,34 @@
+.header {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  flex-direction: row;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.userName {
+  font-size: 2rem;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profileImage {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

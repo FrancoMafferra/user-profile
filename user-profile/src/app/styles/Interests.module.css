@@ -1,0 +1,85 @@
+/* styles/Interests.module.css */
+.interests {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(100%); /* Inicialmente fuera de la pantalla a la derecha */
+  animation: slideInLeft 0.5s ease-out 1s forwards; /* Animación */
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.interests h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.interests ul {
+  list-style: none;
+  padding: 0;
+}
+
+.interests .interestItem {
+  margin-bottom: 10px;
+}
+
+.interests button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.interests .tooltipContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.interests .tooltip {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interests .tooltip p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.interests .tooltip button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.interests .tooltip button:hover {
+  background-color: #555;
+}

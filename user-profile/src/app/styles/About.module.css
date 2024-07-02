@@ -1,0 +1,27 @@
+/* styles/About.module.css */
+.about {
+  opacity: 0;
+  transform: translateX(-100%);
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.about.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}

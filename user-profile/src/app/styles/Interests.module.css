@@ -9,6 +9,8 @@
   opacity: 0; 
   transform: translateX(100%);
   animation: slideInLeft 0.5s ease-out 1s forwards;
+  background-color: #e3fdad;
+
 }
 
 @keyframes slideInLeft {
@@ -42,6 +44,8 @@
   color: #666;
   cursor: pointer;
   text-decoration: underline;
+  font-size: 18px; /* Incrementa el tamaño de la fuente */
+  font-weight: bold; /* Hace que el texto sea en negrita */
 }
 
 .interests .tooltipContainer {

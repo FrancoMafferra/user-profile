@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# User Profile
 
-## Getting Started
+Este es un proyecto de perfil de usuario construido con Next.js y React. Incluye una cabecera, una sección "Sobre mí", una lista de intereses y un formulario de contacto.
 
-First, run the development server:
+## Requisitos
 
-```bash
+- Node.js (versión 16 o superior)
+- npm (versión 7 o superior) o yarn
+
+## Instalación
+
+# 1. Clona este repositorio:
+
+bash
+
+git clone <https://github.com/FrancoMafferra/user-profile.git>
+
+# 2. Navega al directorio del proyecto:
+
+cd user-profile
+
+# 3.Instala las dependencias:
+
+npm install
+# o
+yarn install
+
+# Ejecución en modo de desarrollo
+
+Para iniciar el servidor de desarrollo, ejecuta:
+
 npm run dev
-# or
+# o
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El proyecto estará disponible en http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Construcción para producción
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Para construir el proyecto para producción, ejecuta:
 
-## Learn More
+npm run build
+# o
+yarn build
 
-To learn more about Next.js, take a look at the following resources:
+Esto creará una versión optimizada del proyecto en la carpeta .next.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Para iniciar el servidor de producción, ejecuta:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+npm start
+# o
+yarn start
 
-## Deploy on Vercel
+## Estructura del Proyecto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+components/: Contiene los componentes React utilizados en el proyecto.
+Header.js: Componente para la cabecera del perfil.
+About.js: Componente para la sección "Sobre mí".
+Interests.js: Componente para la lista de intereses.
+ContactForm.js: Componente para el formulario de contacto.
+styles/: Contiene los archivos CSS para estilizar los componentes.
+Header.module.css: Estilos para la cabecera.
+About.module.css: Estilos para la sección "Sobre mí".
+Interests.module.css: Estilos para la lista de intereses.
+ContactForm.module.css: Estilos para el formulario de contacto.
+pages/: Contiene las páginas de Next.js.
+index.js: La página principal que renderiza todos los componentes.
+
+# Contacto
+
+# Para cualquier pregunta o sugerencia, por favor abre un issue en el repositorio o contacta a Franco en francomafferra38@gmail.com.
+
+

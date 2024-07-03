@@ -3,6 +3,7 @@ import styles from "../styles/About.module.css";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [textColor, setTextColor] = useState("#666");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -11,10 +12,16 @@ const About = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleColorChange = () => {
+    const colors = ["#000000", "#ff0000", "#006400", "#0000ff", "#9b870c"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    setTextColor(randomColor);
+  };
+
   return (
     <section className={`${styles.about} ${isVisible ? styles.appear : ""}`}>
-      <h2>Sobre mí</h2>
-      <p>
+      <h2 onClick={handleColorChange}>Sobre mí</h2>
+      <p style={{ color: textColor }}>
         Soy un desarrollador front-end con 2.5 años de experiencia en la
         creación de interfaces de usuario modernas y funcionales. A lo largo de
         mi carrera, he trabajado con tecnologías como HTML, CSS, JavaScript, 

@@ -1,13 +1,14 @@
-/* styles/Interests.module.css */
 .interests {
+  display: grid;
+  justify-content: center;
   padding: 20px;
   background-color: #fff;
   margin: 20px 0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  opacity: 0; /* Inicialmente oculto */
-  transform: translateX(100%); /* Inicialmente fuera de la pantalla a la derecha */
-  animation: slideInLeft 0.5s ease-out 1s forwards; /* Animación */
+  opacity: 0; 
+  transform: translateX(100%);
+  animation: slideInLeft 0.5s ease-out 1s forwards;
 }
 
 @keyframes slideInLeft {
